@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="f9fe38a1-2144-4611-b4dc-626914a17c8d" name="Resourcium_Optima@localhost Mapping">
+      <data-sources db="b879b307-441e-4212-8862-c6d61a5c51d4" ddl="34a4790a-dfe9-42b6-9be6-3ec87250169c" />
+      <scope>
+        <node negative="1">
+          <node kind="database" qname="@" />
+          <node kind="schema" qname="resourcium_optima" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>
