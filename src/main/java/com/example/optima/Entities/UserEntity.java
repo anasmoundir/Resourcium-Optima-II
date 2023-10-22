@@ -7,8 +7,8 @@ import java.util.Set;
 @Entity
 @Table(name = "user", schema = "resourcium_optima")
 public class UserEntity {
-    @ManyToMany
-    @JoinTable(name = "User_Role", joinColumns = @JoinColumn(name = "Id_User"), inverseJoinColumns = @JoinColumn(name = "Id_Role"))
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "Id_User"), inverseJoinColumns = @JoinColumn(name = "Id_Role"))
     private Set<RoleEntity> roles;
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -48,6 +48,9 @@ public class UserEntity {
     }
 
 
+    public Set<RoleEntity> getRoles() {
+        return this.roles;
+    }
     public int getIdUser() {
         return idUser;
     }

@@ -23,10 +23,11 @@
 
 <div class="container mx-auto mt-8 p-4">
   <ul class="flex justify-center space-x-4">
-    <li><a href="dashboard.jsp" class="text-blue-500 hover:underline">Dashboard</a></li>
-    <li><a href="users.jsp" class="text-blue-500 hover:underline">Users</a></li>
-    <li><a href="products.jsp" class="text-blue-500 hover:underline">Products</a></li>
-    <li><a href="orders.jsp" class="text-blue-500 hover:underline">Orders</a></li>
+
+    <li><a href="dashboard.jsp" class="text-blue-500 hover:underline">Welcome</a></li>
+    <li><a href="UpdateProfile.jsp" class="text-blue-500 hover:underline">Upadtig profile</a></li>
+    <li><a href="products.jsp" class="text-blue-500 hover:underline">equipement</a></li>
+    <li><a href="orders.jsp" class="text-blue-500 hover:underline">human ressources</a></li>
     <li><a href="settings.jsp" class="text-blue-500 hover:underline">Settings</a></li>
   </ul>
 </div>

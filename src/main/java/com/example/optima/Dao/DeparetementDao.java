@@ -1,2 +1,4 @@
-package com.example.optima.Dao;public class DeparetementDao {
+package com.example.optima.Dao;
+
+public class DeparetementDao {
 }

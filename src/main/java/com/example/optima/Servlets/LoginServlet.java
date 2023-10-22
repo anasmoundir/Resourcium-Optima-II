@@ -39,13 +39,13 @@ public class LoginServlet extends HttpServlet {
                 HttpSession session = req.getSession(true);
                 session.setAttribute("user", user);
 
-                if(user.getIdRole() == 1)
+                if(user.getIdRole() == 2)
                 {
                     resp.sendRedirect(req.getContextPath() +"/welcome.jsp");
                 }
-                else
+                else if(user.getIdRole() == 1)
                 {
-                    resp.sendRedirect(req.getContextPath() + "/success.jsp");
+                    resp.sendRedirect(req.getContextPath() + "/admin.jsp");
                 }
 
             } else {
