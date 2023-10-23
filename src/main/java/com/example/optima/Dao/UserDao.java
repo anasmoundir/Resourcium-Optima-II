@@ -19,12 +19,18 @@ public class UserDao {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         try {
             entityManager.getTransaction().begin();
-            if (roles != null && !roles.isEmpty()) {
-                user.setRoles(roles);
-            }
 
-            entityManager.persist(user);
-            entityManager.getTransaction().commit();
+            UserEntity existingUser = getUserByEmail(user.getEmail());
+
+            if (existingUser == null) {
+                if (roles != null && !roles.isEmpty()) {
+                    user.setRoles(roles);
+                }
+
+                entityManager.persist(user);
+                entityManager.getTransaction().commit();
+            } else {
+            }
         } catch (Exception e) {
             if (entityManager.getTransaction().isActive()) {
                 entityManager.getTransaction().rollback();
@@ -67,9 +73,10 @@ public class UserDao {
     }
     public void updateUserRole(int userId, Set<RoleEntity> roles) {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
+        System.out.println("updateUserRoleFunction");
         try {
             entityManager.getTransaction().begin();
-            UserEntity user = entityManager.find(UserEntity.class, userId); // Find the user by ID
+            UserEntity user = entityManager.find(UserEntity.class, userId);
             if (user != null && roles != null && !roles.isEmpty()) {
                 user.setRoles(roles);
             }
@@ -84,7 +91,7 @@ public class UserDao {
         }
     }
     public RoleEntity getRoleById(int roleId) {
-        EntityManager entityManager = entityManagerFactory.createEntityManager(); // Define EntityManager
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
         try {
             TypedQuery<RoleEntity> query = entityManager.createQuery(
                     "SELECT r FROM RoleEntity r WHERE r.id = :roleId",
@@ -102,12 +109,30 @@ public class UserDao {
 
     public List<UserEntity> getAllUsersWithRoles() {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
+
         try {
             TypedQuery<UserEntity> query = entityManager.createQuery("SELECT DISTINCT u FROM UserEntity u LEFT JOIN FETCH u.roles", UserEntity.class);
+            System.out.println(query.getResultList());
             return query.getResultList();
+
         } catch (Exception e) {
             e.printStackTrace();
             return null;
+        } finally {
+            entityManager.close();
+        }
+    }
+
+
+    public List<RoleEntity> getAllRoles() {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+
+        try {
+            TypedQuery<RoleEntity> query = entityManager.createQuery("SELECT r FROM RoleEntity r", RoleEntity.class);
+            return query.getResultList();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Collections.emptyList();
         } finally {
             entityManager.close();
         }

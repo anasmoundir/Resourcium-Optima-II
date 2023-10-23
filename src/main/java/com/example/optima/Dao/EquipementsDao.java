@@ -1,5 +1,5 @@
 package com.example.optima.Dao;
 
-public class DeparetementDao {
+public class EquipementsDao {
 
 }
