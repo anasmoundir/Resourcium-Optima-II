@@ -10,28 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4813bba-b310-488e-8c37-d1317164f3b4" name="Changes" comment="adding some tests functions">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Entities/ReservationEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Services/BreakDownService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/NavAdmin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/worker.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/RoleDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b879b307-441e-4212-8862-c6d61a5c51d4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b879b307-441e-4212-8862-c6d61a5c51d4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/BreakDownDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/DeparetementDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/WorkerDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Servlets/LoginServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Servlets/RegisterServletTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Dao/EquipementsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Dao/EquipementsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Dao/WorkerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Dao/WorkerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Entities/EquipementEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Entities/EquipementEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Services/EquipementsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Services/EquipementsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/equipements/EquipementsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/equipements/EquipementsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/equipements.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/equipements.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/EquipementsDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/EquipementsDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +46,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -108,6 +97,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.optima.Servlets" />
       <recent name="com.example.optima.Dao" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
@@ -417,7 +407,7 @@
       <workItem from="1697973264951" duration="23489000" />
       <workItem from="1698047920217" duration="69639000" />
       <workItem from="1698318253098" duration="5912000" />
-      <workItem from="1698329692839" duration="7773000" />
+      <workItem from="1698329692839" duration="12384000" />
     </task>
     <task id="LOCAL-00001" summary="function tested">
       <option name="closed" value="true" />
@@ -516,11 +506,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/optima/Dao/EquipementsDao.java</url>
           <line>38</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/optima/Dao/EquipementsDaoTest.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
