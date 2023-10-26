@@ -11,7 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-
+<jsp:include page="NavAdmin.jsp" />
 <div class="max-w-screen-xl">
     <div class="mx-auto max-w-lg text-center">
         <h1 class="text-3xl font-bold text-gray-900">User Roles</h1>
