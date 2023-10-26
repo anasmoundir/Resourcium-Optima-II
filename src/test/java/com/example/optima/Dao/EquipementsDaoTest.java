@@ -43,7 +43,6 @@ class EquipementsDaoTest {
     @Test
     void addEquipment() {
         EquipementEntity equipement = new EquipementEntity();
-
         equipement.setIdBreakDown(1);
         equipement.setEquipmentCode("test   equipement  ");
         equipement.setAvailability((byte) 0);
