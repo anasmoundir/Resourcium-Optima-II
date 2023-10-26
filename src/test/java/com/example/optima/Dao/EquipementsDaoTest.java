@@ -33,14 +33,56 @@ class EquipementsDaoTest {
 
     @Test
     void getEquipmentById() {
+        EquipementsDao equipementsDao = new EquipementsDao(entityManagerFactory);
+        int existingId = 8;
+        EquipementEntity equipement = equipementsDao.getEquipmentById(existingId);
+        assertNotNull(equipement);
+        assertEquals(existingId,equipement.getIdEquipement());
     }
 
     @Test
     void addEquipment() {
+        EquipementEntity equipement = new EquipementEntity();
+        equipement.setIdBreakDown(1);
+        equipement.setEquipmentCode("test equipement");
+        equipement.setAvailability((byte) 0);
+        equipement.setIdEquipement(100);
+        EquipementsDao equipementsDao = new EquipementsDao(entityManagerFactory);
+        assertDoesNotThrow(() -> {
+            equipementsDao.addEquipment(equipement, 2);
+        });
     }
 
     @Test
     void updateEquipment() {
+        EquipementEntity equipement = new EquipementEntity();
+        equipement.setIdEquipement(8);
+        equipement.setEquipmentCode("Updated Equipment");
+        equipement.setAvailability((byte) 1);
+        equipement.setIdBreakDown(1);
+
+        EquipementsDao equipementsDao = new EquipementsDao(entityManagerFactory);
+
+        String originalEquipmentCode = equipementsDao.getEquipmentById(8).getEquipmentCode();
+        byte originalAvailability = equipementsDao.getEquipmentById(8).getAvailability();
+
+        equipementsDao.updateEquipment(equipement);
+
+        EquipementEntity updatedEquipment = equipementsDao.getEquipmentById(8);
+
+        assertEquals("Updated Equipment", updatedEquipment.getEquipmentCode());
+        assertEquals((byte) 1, updatedEquipment.getAvailability());
+
+        updatedEquipment.setEquipmentCode(originalEquipmentCode);
+        updatedEquipment.setAvailability(originalAvailability);
+        equipementsDao.updateEquipment(updatedEquipment);
+    }
+    @Test
+    public void getEquipementById() {
+        EquipementsDao equipementsDao = new EquipementsDao(entityManagerFactory);
+        int nonExistingId = 100;
+        EquipementEntity equipement = equipementsDao.getEquipmentById(nonExistingId);
+        assertNull(equipement);
     }
 
     @Test
