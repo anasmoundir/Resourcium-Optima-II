@@ -15,6 +15,7 @@
         <class>com.example.optima.Entities.UserEntity</class>
         <class>com.example.optima.Entities.UserRoleEntity</class>
         <class>com.example.optima.Entities.WorkerEntity</class>
+        <class>com.example.optima.Entities.ReservationEntity</class>
         <properties>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />

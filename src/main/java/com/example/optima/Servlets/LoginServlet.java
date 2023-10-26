@@ -38,6 +38,7 @@ public class LoginServlet extends HttpServlet {
             if (user != null && HashPassword.hashPassword(password).equals(user.getUserPassword())) {
                 HttpSession session = req.getSession(true);
                 session.setAttribute("user", user);
+                session.setAttribute("role_id",user.getIdRole());
 
                 if(user.getIdRole() == 2)
                 {

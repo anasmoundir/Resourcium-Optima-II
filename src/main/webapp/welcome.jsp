@@ -31,7 +31,7 @@
             background-color: #f0f0f0;
         }
     </style>
-    <jsp:include page="navbar.jsp" />
+    <jsp:include page="NavAdmin.jsp" />
 </head>
 <body>
 

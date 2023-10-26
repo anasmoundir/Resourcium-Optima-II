@@ -43,8 +43,9 @@ class EquipementsDaoTest {
     @Test
     void addEquipment() {
         EquipementEntity equipement = new EquipementEntity();
+
         equipement.setIdBreakDown(1);
-        equipement.setEquipmentCode("test equipement");
+        equipement.setEquipmentCode("test   equipement  ");
         equipement.setAvailability((byte) 0);
         equipement.setIdEquipement(100);
         EquipementsDao equipementsDao = new EquipementsDao(entityManagerFactory);
@@ -60,7 +61,7 @@ class EquipementsDaoTest {
         equipement.setEquipmentCode("Updated Equipment");
         equipement.setAvailability((byte) 1);
         equipement.setIdBreakDown(1);
-
+        equipement.setIdDepartement(2);
         EquipementsDao equipementsDao = new EquipementsDao(entityManagerFactory);
 
         String originalEquipmentCode = equipementsDao.getEquipmentById(8).getEquipmentCode();
@@ -87,5 +88,8 @@ class EquipementsDaoTest {
 
     @Test
     void deleteEquipment() {
+        int equipmentId = 8;
+        EquipementsDao dao = new EquipementsDao(entityManagerFactory);
+        assertDoesNotThrow(() -> dao.deleteEquipment(equipmentId));
     }
 }

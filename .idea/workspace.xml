@@ -9,20 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4813bba-b310-488e-8c37-d1317164f3b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Dao/EquipementsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Services/EquipementsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/equipements/EquipementsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/equipements.jsp" afterDir="false" />
+    <list default="true" id="e4813bba-b310-488e-8c37-d1317164f3b4" name="Changes" comment="adding some tests functions">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ProjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Entities/ReservationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Services/BreakDownService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/NavAdmin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/worker.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/RoleDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b879b307-441e-4212-8862-c6d61a5c51d4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b879b307-441e-4212-8862-c6d61a5c51d4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/AdminServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/adminusers/AdminServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/EquipementsServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Dao/EquipementsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Dao/EquipementsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Dao/WorkerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Dao/WorkerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Entities/EquipementEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Entities/EquipementEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Services/EquipementsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Services/EquipementsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/equipements/EquipementsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/optima/Servlets/equipements/EquipementsServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/equipements.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/equipements.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/EquipementsDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/optima/Dao/EquipementsDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +41,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="jsf" />
+        <option value="Class" />
         <option value="Jsp File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -66,15 +76,18 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/A2Projects/optima/src/main/webapp/WEB-INF/lib&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -84,33 +97,120 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\A2Projects\optima\src\main\webapp\WEB-INF\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\A2Projects\optima\src\main\webapp" />
       <recent name="C:\A2Projects\optima\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.optima.Dao" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.example.optima.Entities" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.151">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="JUnit.RoleDaoTest.findRoleByName">
+    <configuration name="EquipementsDaoTest.addEquipment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="optima" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.optima.Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.optima.Dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.optima.Dao.EquipementsDaoTest" />
+      <option name="METHOD_NAME" value="addEquipment" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in optima" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EquipementsDaoTest.deleteEquipment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="optima" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.optima.Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.optima.Dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.optima.Dao.EquipementsDaoTest" />
+      <option name="METHOD_NAME" value="deleteEquipment" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="login.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/optima_war_exploded/login.jsp">
-      <method v="2" />
+    <configuration name="EquipementsDaoTest.getEquipementById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="optima" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.optima.Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.optima.Dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.optima.Dao.EquipementsDaoTest" />
+      <option name="METHOD_NAME" value="getEquipementById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EquipementsDaoTest.getEquipmentById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="optima" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.optima.Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.optima.Dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.optima.Dao.EquipementsDaoTest" />
+      <option name="METHOD_NAME" value="getEquipmentById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EquipementsDaoTest.updateEquipment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="optima" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.optima.Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.optima.Dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.optima.Dao.EquipementsDaoTest" />
+      <option name="METHOD_NAME" value="updateEquipment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleDaoTest.findRoleByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="optima" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.optima.Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.optima.Dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.optima.Dao.RoleDaoTest" />
+      <option name="METHOD_NAME" value="findRoleByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TomEE 10.1.15" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 10.1.15" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -286,17 +386,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JavaScript Debug.login.jsp" />
-      <item itemvalue="JUnit.All in optima" />
+      <item itemvalue="JUnit.EquipementsDaoTest.addEquipment" />
+      <item itemvalue="JUnit.EquipementsDaoTest.deleteEquipment" />
+      <item itemvalue="JUnit.EquipementsDaoTest.updateEquipment" />
+      <item itemvalue="JUnit.RoleDaoTest.findRoleByName" />
+      <item itemvalue="JUnit.EquipementsDaoTest.getEquipmentById" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.151" />
       <item itemvalue="TomEE Server.TomEE 10.1.15" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.All in optima" />
-        <item itemvalue="JavaScript Debug.login.jsp" />
+        <item itemvalue="JUnit.RoleDaoTest.findRoleByName" />
+        <item itemvalue="JUnit.EquipementsDaoTest.addEquipment" />
+        <item itemvalue="JUnit.EquipementsDaoTest.deleteEquipment" />
+        <item itemvalue="JUnit.EquipementsDaoTest.updateEquipment" />
+        <item itemvalue="JUnit.EquipementsDaoTest.getEquipementById" />
       </list>
     </recent_temporary>
   </component>
@@ -311,15 +415,121 @@
       <workItem from="1697488905663" duration="44997000" />
       <workItem from="1697642212301" duration="43483000" />
       <workItem from="1697973264951" duration="23489000" />
-      <workItem from="1698047920217" duration="9736000" />
+      <workItem from="1698047920217" duration="69639000" />
+      <workItem from="1698318253098" duration="5912000" />
+      <workItem from="1698329692839" duration="7773000" />
     </task>
+    <task id="LOCAL-00001" summary="function tested">
+      <option name="closed" value="true" />
+      <created>1698328785793</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698328785794</updated>
+    </task>
+    <task id="LOCAL-00002" summary="adding the file service DeparetementDao">
+      <option name="closed" value="true" />
+      <created>1698328815069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698328815069</updated>
+    </task>
+    <task id="LOCAL-00003" summary="BreakDownDao">
+      <option name="closed" value="true" />
+      <created>1698328834795</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698328834795</updated>
+    </task>
+    <task id="LOCAL-00004" summary="DeparetementDao">
+      <option name="closed" value="true" />
+      <created>1698328859102</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698328859102</updated>
+    </task>
+    <task id="LOCAL-00005">
+      <option name="closed" value="true" />
+      <created>1698328875236</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698328875236</updated>
+    </task>
+    <task id="LOCAL-00006">
+      <option name="closed" value="true" />
+      <created>1698328888558</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698328888558</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Worker Service">
+      <option name="closed" value="true" />
+      <created>1698328896250</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698328896250</updated>
+    </task>
+    <task id="LOCAL-00008">
+      <option name="closed" value="true" />
+      <created>1698328913580</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698328913580</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adding some tests functions">
+      <option name="closed" value="true" />
+      <created>1698334484112</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698334484112</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="function tested" />
+    <MESSAGE value="adding the file service DeparetementDao" />
+    <MESSAGE value="BreakDownDao" />
+    <MESSAGE value="DeparetementDao" />
+    <MESSAGE value="Dependencies managements" />
+    <MESSAGE value="Worker Servlet" />
+    <MESSAGE value="Worker Service" />
+    <MESSAGE value="Changes admin.jsp" />
+    <MESSAGE value="adding some tests functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding some tests functions" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/optima/Dao/EquipementsDao.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/optima/Dao/EquipementsDaoTest.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/optima$TomEE_10_1_15.ic" NAME="TomEE 10.1.15 Coverage Results" MODIFIED="1697641877992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/optima$EquipementsDaoTest_addEquipment.ic" NAME="EquipementsDaoTest.addEquipment Coverage Results" MODIFIED="1698335811450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.optima.Dao.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/optima$Tomcat_10_1_151.ic" NAME="Tomcat 10.1.151 Coverage Results" MODIFIED="1698049527496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
